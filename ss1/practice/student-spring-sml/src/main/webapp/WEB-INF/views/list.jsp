@@ -13,18 +13,25 @@
 </head>
 <body>
 <a href="/student/create">Thêm mới</a>
+<p style="color: red">${mess}</p>
 <br>
 <table>
     <tr>
         <th>STT</th>
         <th>ID</th>
         <th>NAME</th>
+        <th>Detail-RequestParam</th>
+        <th>Detail-PathVariable</th>
     </tr>
     <c:forEach var="student" items="${studentList}" varStatus="loop">
         <tr>
             <td>${loop.count}</td>
             <td>${student.id}</td>
             <td>${student.name}</td>
+            <td>
+                <a href="/student/detail?id=${student.id}">Detail-RequestParam</a>
+                <a href="/student/detail/${student.id}">Detail-PathVariable</a>
+            </td>
         </tr>
     </c:forEach>
 </table>

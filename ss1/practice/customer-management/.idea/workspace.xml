@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd1910f-ccaa-4208-ba6d-79ff1d5e5579" name="Changes" comment="" />
+    <list default="true" id="abd1910f-ccaa-4208-ba6d-79ff1d5e5579" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/java/com/example/emailvalidatemaven/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/webapp/WEB-INF/views/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/webapp/WEB-INF/views/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/email-validate-maven/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-email-validation/src/main/java/com/codegym/emailvalidation/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-email-validation/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-email-validation/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-email-validation/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-email-validation/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-timezone/src/main/java/com/example/springtimezone/TimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-timezone/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-timezone/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss2/practice/spring-timezone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../excercise/dictionary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../excercise/dictionary/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/repository/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/service/IStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/service/IStudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/java/com/codegym/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../student-spring-sml/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../student-spring-sml/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +59,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -52,7 +78,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/codegym/_C0323G1_LeQuangPhuoc_module4/ss1/practice/customer-management",
+    "last_opened_file_path": "C:/Users/La/Desktop/customer-management-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -164,6 +190,8 @@
       <workItem from="1689613443577" duration="271000" />
       <workItem from="1689613823942" duration="156000" />
       <workItem from="1689650684258" duration="444000" />
+      <workItem from="1689741494836" duration="44000" />
+      <workItem from="1689741717514" duration="100000" />
     </task>
     <servers />
   </component>

@@ -22,4 +22,14 @@ public class StudentRepository implements IStudentRepository{
     public void addStudent(Student student) {
         studentList.add(student);
     }
+
+    @Override
+    public Student findById(int id) {
+        for (Student s:studentList) {
+            if (s.getId()==id){
+                return s;
+            }
+        }
+        return null;
+    }
 }
