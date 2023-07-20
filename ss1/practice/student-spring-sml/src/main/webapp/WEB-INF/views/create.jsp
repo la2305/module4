@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: La
@@ -11,10 +12,20 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/student/create" method="post">
-    <input name="id" type="text" placeholder="Nhập id">
-    <input name="name" type="text" placeholder="Nhập name">
-    <button type="submit">Lưu</button>
-</form>
+<form:form modelAttribute="student" action="/student/create" method="post">
+    ID
+    <form:input path="id"/><br>
+    Name
+    <form:input path="name"/><br>
+    Gender
+    <form:select path="gender">
+        <form:option value="1">Nam</form:option>
+        <form:option value="0">Nữ</form:option>
+        <form:option value="-1">LGBT</form:option>
+    </form:select>
+    Languages
+    <form:checkboxes path="languages" items="${ngonNgu}"/>
+    <form:button>Add</form:button>
+</form:form>
 </body>
 </html>

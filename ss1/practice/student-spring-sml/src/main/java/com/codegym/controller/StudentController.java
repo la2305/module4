@@ -25,13 +25,18 @@ public class StudentController {
         modelAndView.addObject("studentList",studentList);
         return modelAndView;
     }
+    @ModelAttribute("ngonNgu")
+    public String[] getLanguages(){
+        System.out.println("Chay di cung :v :v ");
+        return new String[]{"js","java","php"};
+    }
     @GetMapping("/create")
-    public String showCreateFomr(){
+    public String showCreateFomr(Model model){
+        model.addAttribute("student",new Student());
         return "create";
     }
     @PostMapping("/create")
-    public String save(@RequestParam int id, @RequestParam String name, RedirectAttributes redirectAttributes){
-        Student student = new Student(id,name);
+    public String save(@ModelAttribute Student student, RedirectAttributes redirectAttributes){
         studentService.addStudent(student);
         redirectAttributes.addFlashAttribute("mess","Thêm mới thành công");
         return "redirect:/student/list";

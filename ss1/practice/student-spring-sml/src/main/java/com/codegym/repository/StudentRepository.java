@@ -9,9 +9,9 @@ import java.util.List;
 public class StudentRepository implements IStudentRepository{
     private static List<Student> studentList = new ArrayList<>();
     static {
-        studentList.add(new Student(1,"Chánh1"));
-        studentList.add(new Student(2,"Chánh2"));
-        studentList.add(new Student(3,"Chánh3"));
+        studentList.add(new Student(1,"Chánh1",1,"java"));
+        studentList.add(new Student(2,"Chánh2",2,"alo"));
+        studentList.add(new Student(3,"Chánh3",1,"php"));
     }
     @Override
     public List<Student> findAll() {

@@ -20,6 +20,8 @@
         <th>STT</th>
         <th>ID</th>
         <th>NAME</th>
+        <th>GENDER</th>
+        <th>LANGUAGES</th>
         <th>Detail-RequestParam</th>
         <th>Detail-PathVariable</th>
     </tr>
@@ -28,6 +30,14 @@
             <td>${loop.count}</td>
             <td>${student.id}</td>
             <td>${student.name}</td>
+            <c:if test="${student.gender ==1}">
+                <td>Nam</td>
+            </c:if><c:if test="${student.gender ==0}">
+                <td>Nữ</td>
+            </c:if><c:if test="${student.gender ==-1}">
+                <td>LGBT</td>
+            </c:if>
+            <td>${student.languages}</td>
             <td>
                 <a href="/student/detail?id=${student.id}">Detail-RequestParam</a>
                 <a href="/student/detail/${student.id}">Detail-PathVariable</a>
