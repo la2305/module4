@@ -5,10 +5,7 @@ import com.codegym.service.IProductService;
 import com.codegym.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.beans.Customizer;
@@ -24,6 +21,7 @@ public class ProductController {
         model.addAttribute("productList",productList);
         return "/home";
     }
+
     @GetMapping("/create")
     public String showCreate(Model model){
         model.addAttribute("product",new Product());
@@ -56,4 +54,10 @@ public class ProductController {
         return "/detail";
     }
 
+    @GetMapping("/search")
+    public String search(@RequestParam  String name, Model model){
+        List<Product> productList = productService.search(name);
+        model.addAttribute("productList",productList);
+        return "/home";
+    }
 }

@@ -42,9 +42,13 @@ public class ProductRepository implements IProductRepository{
 
     @Override
     public List<Product> search(String name) {
-        for (Product product:listProduct) {
-
+        List<Product> productList = new ArrayList<>();
+        for (Product product:listProduct.values()) {
+            if (product.getName().equals(name)){
+                productList.add(product);
+            }
         }
+        return productList;
     }
 
 
