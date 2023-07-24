@@ -28,9 +28,10 @@ public class ProductController {
         return "/create";
     }
     @PostMapping("/create")
-    public String create(Product product ){
+    public String create(Product product, RedirectAttributes redirectAttributes ){
         product.setId((int) (Math.random()*10000));
         productService.addProduct(product);
+        redirectAttributes.addFlashAttribute("msg","Add successful");
         return "redirect:/product";
     }
     @GetMapping("/{id}/edit")
@@ -39,13 +40,15 @@ public class ProductController {
         return "/edit";
     }
     @PostMapping("/edit")
-    public String edit(Product product){
+    public String edit(Product product, RedirectAttributes redirectAttributes){
         productService.editProduct(product.getId(),product);
+        redirectAttributes.addFlashAttribute("msg","Edit successful");
         return "redirect:/product";
     }
     @GetMapping("/{id}/delete")
-    public String showDelete(@PathVariable int id){
+    public String showDelete(@PathVariable int id,RedirectAttributes redirectAttributes){
         productService.deleteProduct(id);
+        redirectAttributes.addFlashAttribute("msg","delete successful");
         return "redirect:/product";
     }
     @GetMapping("/{id}/detail")

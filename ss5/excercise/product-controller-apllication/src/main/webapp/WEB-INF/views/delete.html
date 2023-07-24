@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Delete product</h1>
+<a th:href="@{/product}">Back to list</a>
+<form th:action="@{/product/delete}" th:object="${product}" method="post" novalidate="novalidate">
+    <input type="hidden" th:field="*{id}">
+    <table border="1px" cellpadding="5px">
+        <tr>
+            <th><label>Name</label></th>
+            <th><label>Price</label></th>
+            <th><label>Description</label></th>
+            <th><label>Producer</label></th>
+        </tr>
+        <tr>
+            <input type="text" th:field="*{name}"/>
+
+            <td th:field="*{price}"></td>
+            <td th:field="*{description}"></td>
+            <td th:field="*{producer}"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Delete">
+</form>
+</body>
+</html>
