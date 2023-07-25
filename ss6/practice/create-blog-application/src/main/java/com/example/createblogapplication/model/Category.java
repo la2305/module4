@@ -11,8 +11,8 @@ public class Category {
     private String name;
     @OneToMany(mappedBy = "category")
     private Set<Blog> blogSet;
+    public Category(){
 
-    public Category() {
     }
 
     public Category(int id, String name) {

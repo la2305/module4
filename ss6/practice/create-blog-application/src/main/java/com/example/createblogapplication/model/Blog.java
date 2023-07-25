@@ -1,7 +1,4 @@
 package com.example.createblogapplication.model;
-
-import org.springframework.web.bind.annotation.GetMapping;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -13,14 +10,15 @@ public class Blog {
     @Column(columnDefinition = "TEXT")
     private String content;
     private String name;
-    @Column(name="date",columnDefinition = "DATE")
+    @Column(name="date",columnDefinition ="DATE")
     private Date date;
     private String author;
+
     @ManyToOne
     @JoinColumn(name = "category_id",referencedColumnName = "id")
     private Category category;
+    public Blog(){
 
-    public Blog() {
     }
 
     public Blog(int id, String content, String name, Date date, String author, Category category) {
@@ -63,11 +61,11 @@ public class Blog {
     public void setCategory(Category category) {
         this.category = category;
     }
+
     public Blog(int id, String content, Date date) {
         this.id = id;
         this.content = content;
         this.date = date;
-
     }
 
     public int getId() {

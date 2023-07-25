@@ -17,8 +17,6 @@ public class BlogService implements IBlogService{
         return iBlogRepository.findAll();
     }
 
-
-
     @Override
     public void add(Blog blog) {
         iBlogRepository.save(blog);

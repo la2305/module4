@@ -6,12 +6,9 @@
 </head>
 <body>
 <header>
-    <div class="mx-auto" align="center"><img src="https://logos-world.net/wp-content/uploads/2021/08/Christian-Dior-Symbol.png" style="width: 10%;height: 10%"></div>
-    <div align="center" class="mx-auto"><h1>Blog Jackie</h1>
-        <a th:href="@{/blog/create}"><button class="btn btn-outline-primary">Đăng bài viết</button></a>
-    </div>
+        <a th:href="@{/blog/create}"><button>Đăng bài viết</button></a>
 </header>
-<table class=" table table-light mx-auto ">
+<table>
     <tr>
         <th>STT</th>
         <th>Tên</th>
@@ -20,6 +17,7 @@
         <th>Thể loại</th>
         <th>Xóa</th>
         <th>Chỉnh sửa</th>
+        <th>Xem chi tiết</th>
     </tr>
     <tr th:each="blog,status: ${blogList}">
         <td th:text="${status.count}"></td>
@@ -27,8 +25,9 @@
         <td th:text="${blog.content}"></td>
         <td th:text="${blog.author}"></td>
         <td th:text="${blog.category.name}"></td>
-        <td><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}"><button class="btn btn-outline-danger">Xóa</button></a></td>
-        <td><a th:href="@{/blog/update/{id}(id=${blog.getId()})}"><button class="btn btn-outline-danger">Cập nhật</button></a></td>
+        <td><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}"><button>Xóa</button></a></td>
+        <td><a th:href="@{/blog/update/{id}(id=${blog.getId()})}"><button>Cập nhật</button></a></td>
+        <td><a th:href="@{/blog/detail/{id}(id=${blog.getId()})}"><button>Xem chi tiết</button></a></td>
     </tr>
 </table>
 <h1 th:if="${msg}" th:text="${msg}"></h1>
