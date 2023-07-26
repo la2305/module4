@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:object="${category}" th:action="@{/category/create}" method="post">
+    <tr>
+        <th>Thể loại</th>
+        <th><input th:field="*{name}"></th>
+    </tr>
+    <tr>
+        <td><button>Lưu</button></td>
+        <td><a th:href="@{/category/list.html}"><button>Hủy bỏ</button></a></td>
+    </tr>
+</form>
+</body>
+</html>
