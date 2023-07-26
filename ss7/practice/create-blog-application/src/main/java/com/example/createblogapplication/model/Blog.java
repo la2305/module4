@@ -63,12 +63,6 @@ public class Blog {
         this.category = category;
     }
 
-    public Blog(int id, String content, Date date) {
-        this.id = id;
-        this.content = content;
-        this.date = date;
-    }
-
     public int getId() {
         return id;
     }

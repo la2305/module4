@@ -37,4 +37,28 @@ public class CategoryController {
         redirectAttributes.addFlashAttribute("msg","Thêm mới thành công");
         return "redirect:/category/list";
     }
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable int id,RedirectAttributes redirectAttributes){
+        categoryService.delete(id);
+        redirectAttributes.addFlashAttribute("msg","Xóa thành công");
+        return "redirect:/category/list";
+    }
+    @GetMapping("/edit/{id}")
+    public String showEdit(@PathVariable int id,Model model){
+        Category category = categoryService.findById(id);
+        model.addAttribute("category",category);
+        return "/category/edit";
+    }
+    @PostMapping("/edit")
+    public String edit(@ModelAttribute Category category,RedirectAttributes redirectAttributes){
+        categoryService.edit(category);
+        redirectAttributes.addFlashAttribute("msg","chỉnh sửa thành công");
+        return "redirect:/category/list";
+    }
+//    @GetMapping("/showBlog/{id}")
+//    public String showBlog(@PathVariable int id,Model model){
+//        Category category = categoryService.findById(id);
+//        model.addAttribute("category",category);
+//        return "/category/info";
+//    }
 }

@@ -15,9 +15,10 @@ public class Category {
 
     }
 
-    public Category(int id, String name) {
+    public Category(int id, String name, Set<Blog> blogSet) {
         this.id = id;
         this.name = name;
+        this.blogSet = blogSet;
     }
 
     public int getId() {
@@ -34,5 +35,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<Blog> getBlogSet() {
+        return blogSet;
+    }
+
+    public void setBlogSet(Set<Blog> blogSet) {
+        this.blogSet = blogSet;
     }
 }
