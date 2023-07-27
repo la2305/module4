@@ -17,7 +17,7 @@
     </tr>
     <tr th:each="category,status: ${categoryPage}">
         <td th:text="${status.count}"></td>
-        <td th:href="@{/category/showBlog/{id}(id=${category.getId()})}" th:text="${category.name}"></td>
+        <td><a th:href="@{/category/showBlog/{id}(id=${category.getId()})}" th:text="${category.name}"></a></td>
         <td><a th:href="@{/category/delete/{id}(id=${category.getId()})}"><button>Xóa</button></a></td>
         <td><a th:href="@{/category/edit/{id}(id=${category.getId()})}"><button>Cập nhật</button></a></td>
     </tr>

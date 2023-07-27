@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<a th:href="@{/blog/create}"><button>Đăng bài viết</button></a>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Ngày</th>
+        <th>Nội dung</th>
+        <th>Tác giả</th>
+        <th>Thể loại</th>
+    </tr>
+    <tr th:each="blog,loop: ${blogList}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${blog.name}"></td>
+        <td th:text="${blog.date}"></td>
+        <td th:text="${blog.content}"></td>
+        <td th:text="${blog.author}"></td>
+        <td th:text="${blog.category.name}"></td>
+    </tr>
+</table>
 </body>
 </html>

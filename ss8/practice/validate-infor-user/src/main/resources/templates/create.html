@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<a th:href="@{/blog/list}"><button>Trở lại blog</button></a>
+
+<form th:object="${blog}" th:action="@{/blog/create}" method="post">
+    <table align="center">
+        <tr>
+            <th>Tác giả</th>
+            <th><input th:field="*{author}"></th>
+        </tr>
+        <tr>
+            <th>Tiêu đề</th>
+            <th><input th:field="*{name}"></th>
+        </tr>
+        <tr>
+            <th>Nội dung</th>
+            <th><input th:field="*{content}"></th>
+        </tr>
+        <tr>
+            <th>Thể loại</th>
+            <th>
+                <select th:field="*{category}">
+                    <option th:each="categoryList: ${categoryList}" th:value="${categoryList.id}" th:text="${categoryList.name}"></option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button>Tạo mới</button>
+            </th>
+            <th>
+                <a th:href="@{/blog/list}"><button type="button">Hủy bỏ</button></a>
+            </th>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

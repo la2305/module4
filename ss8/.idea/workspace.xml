@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae1d7203-b08b-4870-81d1-5df555d2cfe7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss6/practice/create-blog-application/src/main/java/com/example/createblogapplication/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6/practice/create-blog-application/src/main/java/com/example/createblogapplication/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/java/com/example/createblogapplication/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/java/com/example/createblogapplication/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/resources/templates/category/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/resources/templates/category/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/resources/templates/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7/practice/create-blog-application/src/main/resources/templates/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/java/com/example/regist/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excercise/regist/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/excercise/regist/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/ClassRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/ClassRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Jame.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Jame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/model/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/student/src/main/java/com/example/student/repository/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/repository/IRepositoryBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/repository/IRepositoryBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/repository/IRespositoryCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/repository/IRespositoryCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/java/com/example/validateinforuser/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/validate-infor-user/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice/validate-infor-user/src/main/resources/templates/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2T9tJIqbTm3BlazJ6nhYuECLIZ4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/codegym/_C0323G1_LeQuangPhuoc_module4/ss8/excercise/regist",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae1d7203-b08b-4870-81d1-5df555d2cfe7" name="Changes" comment="" />
+      <created>1690467050859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690467050859</updated>
+      <workItem from="1690467051996" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

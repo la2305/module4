@@ -55,10 +55,10 @@ public class CategoryController {
         redirectAttributes.addFlashAttribute("msg","chỉnh sửa thành công");
         return "redirect:/category/list";
     }
-//    @GetMapping("/showBlog/{id}")
-//    public String showBlog(@PathVariable int id,Model model){
-//        Category category = categoryService.findById(id);
-//        model.addAttribute("category",category);
-//        return "/category/info";
-//    }
+    @GetMapping("/showBlog/{id}")
+    public String showBlog(@PathVariable int id,Model model){
+        Category category = categoryService.findById(id);
+        model.addAttribute("category",category);
+        return "/category/info";
+    }
 }

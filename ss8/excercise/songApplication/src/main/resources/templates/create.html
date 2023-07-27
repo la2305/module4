@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <form th:object="${songDto}" th:action="@{/create}" method="post">
+        <tr>
+            <th>Name</th>
+            <th><input th:text="*{name}"></th>
+        </tr>
+        <tr>
+            <th>NameSinger</th>
+            <th><input th:text="*{name}"></th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th><input th:text="*{name}"></th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th><input th:text="*{name}"></th>
+        </tr>
+    </form>
+</table>
+</body>
+</html>

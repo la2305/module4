@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form th:object="${userDto}" th:action="@{/register}" method="post">
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td><input th:field="*{firstName}"></td>
+            <small style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></small>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input th:field="*{lastName}"></td>
+        </tr>
+        <tr>
+            <th>Phone number</th>
+            <td><input th:field="*{phoneNumber}"></td>
+            <small style="color: red" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></small>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="date" th:field="*{age}"></td>
+            <small style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></small>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input th:field="*{email}"></td>
+            <small style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+        </tr>
+    </table>
+    <button type="submit">Đăng ký</button>
+</form>
 </body>
 </html>

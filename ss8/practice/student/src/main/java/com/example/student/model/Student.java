@@ -1,4 +1,4 @@
-package com.codegym.demo_spring_data_jpa.model;
+package com.example.student.model;
 
 import javax.persistence.*;
 import java.util.Set;
