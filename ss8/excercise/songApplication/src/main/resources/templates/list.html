@@ -19,8 +19,9 @@
             <td th:text="${song.name}"></td>
             <td th:text="${song.nameSinger}"></td>
             <td th:text="${song.type}"></td>
-            <td th:href="@{/edit/{id}(id=${song.getId()})}"></td>
+            <td><a th:href="@{/edit/{id}(id=${song.getId()})}"><button>Edit</button></a></td>
         </tr>
+        <p1 th:if="${msg}" th:text="${msg}"></p1>
     </table>
 </body>
 </html>
