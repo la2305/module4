@@ -79,4 +79,5 @@ public class BlogController {
         model.addAttribute("blog",blog);
         return "detail";
     }
+
 }

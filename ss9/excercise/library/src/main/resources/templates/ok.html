@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Mượn sách thành công rồi nhé</h1>
+<h1>Đây là mã mượn sách của bạn</h1>
+<h2 th:text="${randomNumber}"></h2>
+<h2>Vui lòng ghi nhớ mã thuê sách này để trả sách nhé</h2>
+<a th:href="@{/list}">Quay về trang chủ</a>
+</body>
+</html>

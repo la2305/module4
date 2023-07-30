@@ -92,19 +92,19 @@ public class UserDto implements Validator {
     public void validate(Object target, Errors errors) {
         UserDto userDto = (UserDto) target;
         if (userDto.getFirstName().equals("")){
-            errors.rejectValue("firstName",null,"Không để trống");
+            errors.rejectValue("firstName",null,"Không để trống tên");
         } else if (!userDto.getFirstName().matches("^[a-zA-Z]{5,45}$")){
             errors.rejectValue("firstName",null,"Firstname bắt buộc," +
                     " có độ dài tối thiểu 5, tối đa 45 ký tự, và chỉ là kí tự tiếng anh");
         }
         if (!userDto.getPhoneNumber().matches("^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$")){
-            errors.rejectValue("phoneNumber",null,"Đặt số điện thoại theo đúng quy định");
+            errors.rejectValue("phoneNumber",null,"Đặt số điện thoại theo đúng quy định với 10 số và bắt đầu bằng số 0");
         }
         if (userDto.getEmail().matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$")){
-            errors.rejectValue("email",null,"Đặt email đúng định dạng");
+            errors.rejectValue("email",null,"Đặt email đúng định dạng user@gmail.com");
         }
         if (userDto.getAge()==null){
-            errors.rejectValue("age",null,"Không để trống");
+            errors.rejectValue("age",null,"Không để trống năm sinh");
         } else if(!checkAge(userDto.getAge())) {
             errors.rejectValue("age",null,"người đăng kí không được bé hơn 18 tuổi");
         }

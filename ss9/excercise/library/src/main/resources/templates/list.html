@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên sách</th>
+        <th>Hình ảnh</th>
+        <th>Số lượng</th>
+        <th>Mượn</th>
+        <th>Trả sách</th>
+    </tr>
+    <tr th:each="book,loop: ${bookList}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${book.name}"></td>
+        <td><img th:src="${book.image}"></td>
+        <td th:text="${book.quantity}"></td>
+        <td><a th:href="@{/detail/{id}(id=${book.getId()})}"><button>Mượn</button></a></td>
+        <td><a th:href="@{/pay/{id}(id=${book.getId()})}"><button>Trả sách</button></a></td>
+    </tr>
+</table>
+</body>
+</html>
