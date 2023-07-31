@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form th:each="loop: ${book}">
+<form th:object="${book}">
     <fieldset>
         <legend>Chào mừng bạn đến nơi có những cuốn sách tuyệt vời
             <table>
@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <th>Mượn sách</th>
-                    <td><a th:href="@{/borrow/{id}(id=${book.getId()})}"><button>Mượn</button></a></td>
+                    <td><a th:href="@{/borrow/{id}(id=${book.getId()})}"><button type="button">Mượn</button></a></td>
                 </tr>
             </table>
         </legend>

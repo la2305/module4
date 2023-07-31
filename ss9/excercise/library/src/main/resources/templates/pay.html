@@ -5,19 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<h1 th:href="@{/list}">Quay về trang chủ</h1>
-<form>
+<h1><a th:href="@{/list}"><button>Quay về trang chủ</button></a></h1>
+<form th:action="@{/give}" method="post">
     <table>
         <tr>
-            <th>Sách bạn đã mượn</th>
+            <th>Tên cuốn sách bạn đã mượn</th>
             <th th:text="${book.name}"></th>
+        </tr>
+        <tr>
+            <th><input type="hidden" th:value="${book.id}" name="id"></th>
         </tr>
         <tr>
             <td>Nhập mã mượn sách</td>
             <td><input type="number" name="code"></td>
         </tr>
-        <p><button>Lưu</button></p>
+        <p><button>Trả sách</button></p>
     </table>
 </form>
+<p1 th:if="${msg}" th:text="${msg}"></p1>
 </body>
 </html>

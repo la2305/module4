@@ -22,7 +22,7 @@ public class BookCodeService implements IBookCodeService{
     }
 
     @Override
-    public BookCode findByName(int code) {
+    public BookCode findByCode(int code) {
         return bookCodeRepository.findBookCodeByCode(code);
     }
 }

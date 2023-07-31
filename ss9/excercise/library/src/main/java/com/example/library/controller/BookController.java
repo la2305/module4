@@ -1,5 +1,5 @@
 package com.example.library.controller;
-import com.example.library.exception.DuplicateException;
+
 import com.example.library.model.Book;
 import com.example.library.model.BookCode;
 import com.example.library.service.IBookCodeService;
@@ -30,48 +30,51 @@ public class BookController {
     @GetMapping("/detail/{id}")
     public String showBorrow(@PathVariable int id, Model model) {
         Book book = bookService.findByIdBook(id);
-        model.addAttribute("book",book);
+        model.addAttribute("book", book);
         return "/detail";
     }
+
     @GetMapping("/borrow/{id}")
-    public String borrow (@PathVariable int id,Model model) throws DuplicateException {
+    public String borrow(@PathVariable int id, Model model) {
         Book book = bookService.findByIdBook(id);
+        System.out.println(book);
         Random random = new Random();
         int randomNumber = random.nextInt(90000) + 10000;
-        if (book.getQuantity()>=1){
-            book.setQuantity(book.getQuantity()-1);
-
-//            bookService.edit(book);
-
-            BookCode bookCode = new BookCode(randomNumber,book);
+        if (book.getQuantity() >= 1) {
+            book.setQuantity(book.getQuantity() - 1);
+            BookCode bookCode = new BookCode(randomNumber, book);
             bookCodeService.add(bookCode);
-            model.addAttribute("randomNumber",randomNumber);
+            model.addAttribute("randomNumber", randomNumber);
             return "/ok";
-        }else {
-            throw new DuplicateException("Số sách hiện đã hết");
+        } else {
+            return "/not";
         }
     }
 
     @GetMapping("/pay/{id}")
-    public String payShow(@PathVariable int id, Model model){
+    public String payShow(@PathVariable int id, Model model) {
         Book book = bookService.findByIdBook(id);
-        model.addAttribute("book",book);
+        model.addAttribute("book", book);
         return "/pay";
     }
-//    @PostMapping("/give")
-//    public String giveBook(@RequestParam int nameBookCode, Model model) {
-//        BookCode bookGive = bookCodeService.findByName(nameBookCode);
-//        Book book = bookGive.getBook();
-//        bookCodeService.delete(nameBookCode);
-//        book.setQuantity(book.getQuantity() + 1);
-//        bookService.add(book);
-//        model.addAttribute("msg", "Cảm ơn bạn đã tin dùng dịch vụ");
-//        model.addAttribute("list", bookService.findAll());
-//        return "list";
-//    }
 
-    @ExceptionHandler(DuplicateException.class)
-    public String duplicateException(){
-        return "error";
+    @PostMapping("/give")
+    public String giveBook(@RequestParam int code,@RequestParam int id, Model model) {
+        System.out.println(id);
+        BookCode bookCode = bookCodeService.findByCode(code);
+        if (bookCode != null) {
+            bookCodeService.delete(code);
+            Book book = bookCode.getBook();
+            book.setQuantity(book.getQuantity() + 1);
+            bookService.addBook(book);
+            model.addAttribute("msg", "Trả sách thành công");
+            model.addAttribute("bookList", bookService.findAll());
+            return "/list";
+        } else {
+            Book book = bookService.findByIdBook(id);
+            model.addAttribute("book",book);
+            model.addAttribute("msg", "Mã trả sách của bạn sai rồi");
+            return "/pay";
+        }
     }
 }
