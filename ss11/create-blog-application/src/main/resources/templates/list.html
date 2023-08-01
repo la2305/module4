@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+<form th:action="@{/blog/list}" method="get" >
+    <input type="text" name="searchName" th:value="${searchName}">
+    <button type="submit">Search</button>
+</form>
+        <a th:href="@{/blog/create}"><button>Đăng bài viết</button></a>
+        <a th:href="@{/category/list}"><button>Quản lí doanh mục category</button></a>
+</header>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Nội dung</th>
+        <th>Ngày đăng</th>
+        <th>Tác giả</th>
+        <th>Thể loại</th>
+        <th>Xóa</th>
+        <th>Chỉnh sửa</th>
+        <th>Xem chi tiết</th>
+    </tr>
+    <tr th:each="blog,status: ${blogPage}">
+        <td th:text="${status.count}"></td>
+        <td th:text="${blog.name}" ></td>
+        <td th:text="${blog.content}"></td>
+        <td th:text="${blog.date}"></td>
+        <td th:text="${blog.author}"></td>
+        <td th:text="${blog.category.name}"></td>
+        <td><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}"><button>Xóa</button></a></td>
+        <td><a th:href="@{/blog/update/{id}(id=${blog.getId()})}"><button>Cập nhật</button></a></td>
+        <td><a th:href="@{/blog/detail/{id}(id=${blog.getId()})}"><button>Xem chi tiết</button></a></td>
+    </tr>
+</table>
+
+<a th:if="${blogPage.hasPrevious()}" th:href="@{/blog/list(page=${blogPage.number -1},searchName=${searchName})}">Prev</a>
+<span th:text="${blogPage.number+1}"></span>/<span th:text="${blogPage.totalPages}"></span>
+<a th:if="${blogPage.hasNext()}" th:href="@{/blog/list(page=${blogPage.number+1},searchName=${searchName})}">Next</a>
+<h1 th:if="${msg}" th:text="${msg}"></h1>
+</body>
+</html>

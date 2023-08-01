@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <td>STT</td>
+        <td>Blog Tittle</td>
+        <td>Content</td>
+        <td>Author</td>
+        <td>Category</td>
+        <td>Date</td>
+    </tr>
+    <tr th:each="blog,status: ${category.blogSet}">
+        <td th:text="${status.count}"></td>
+        <td th:text="${blog.name}"></td>
+        <td th:text="${blog.content}"></td>
+        <td th:text="${blog.author}"></td>
+        <td th:text="${blog.category}"></td>
+        <td th:text="${blog.date}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a th:href="@{/blog/list}"><button>Quay về trang chủ</button></a>
+<a th:href="@{/category/create}"><button>Tạo thể loại blog mới</button></a>
+<table>
+    <tr>
+        <th>STT</th>
+        <th>THỂ LOẠI</th>
+        <th>XÓA</th>
+        <th>CẬP NHẬT</th>
+    </tr>
+    <tr th:each="category,status: ${categoryPage}">
+        <td th:text="${status.count}"></td>
+        <td><a th:href="@{/category/showBlog/{id}(id=${category.getId()})}" th:text="${category.name}"></a></td>
+        <td><a th:href="@{/category/delete/{id}(id=${category.getId()})}"><button>Xóa</button></a></td>
+        <td><a th:href="@{/category/edit/{id}(id=${category.getId()})}"><button>Cập nhật</button></a></td>
+    </tr>
+</table>
+<a th:if="${categoryPage.hasPrevious()}" th:href="@{/category/list(page=${categoryPage.number -1},searchName=${searchName})}">Prev</a>
+<span th:text="${categoryPage.number+1}"></span>/<span th:text="${categoryPage.totalPages}"></span>
+<a th:if="${categoryPage.hasNext()}" th:href="@{/category/list(page=${categoryPage.number+1},searchName=${searchName})}">Next</a>
+<h1 th:if="${msg}" th:text="${msg}"></h1>
+</body>
+</html>

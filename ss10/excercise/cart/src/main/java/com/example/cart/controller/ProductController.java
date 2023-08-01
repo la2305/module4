@@ -74,5 +74,4 @@ public class ProductController {
         redirectAttributes.addFlashAttribute("msg","Thanh toán thành công, tổng hóa đơn của bạn là: " +totalPayment+"VNĐ");
         return "redirect:/shopping-cart";
     }
-
 }
