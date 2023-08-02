@@ -6,7 +6,7 @@
 </head>
 <body>
 <header>
-<form th:action="@{/blog/list}" method="get" >
+<form th:action="@{/blog/list}" method="get">
     <input type="text" name="searchName" th:value="${searchName}">
     <button type="submit">Search</button>
 </form>
@@ -37,10 +37,10 @@
         <td><a th:href="@{/blog/detail/{id}(id=${blog.getId()})}"><button>Xem chi tiết</button></a></td>
     </tr>
 </table>
-
 <a th:if="${blogPage.hasPrevious()}" th:href="@{/blog/list(page=${blogPage.number -1},searchName=${searchName})}">Prev</a>
-<span th:text="${blogPage.number+1}"></span>/<span th:text="${blogPage.totalPages}"></span>
+<span th:text="${blogPage.number+1}">/</span>/<span th:text="${blogPage.totalPages}"></span>
 <a th:if="${blogPage.hasNext()}" th:href="@{/blog/list(page=${blogPage.number+1},searchName=${searchName})}">Next</a>
+
 <h1 th:if="${msg}" th:text="${msg}"></h1>
 </body>
 </html>

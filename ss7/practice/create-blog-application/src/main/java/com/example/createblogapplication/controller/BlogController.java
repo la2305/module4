@@ -28,7 +28,7 @@ public class BlogController {
     private ICategoryService categoryService;
 
     @GetMapping("/list")
-    public String showDisplay(Model model,@RequestParam(defaultValue = "0") int page,@RequestParam(defaultValue = "") String searchName) {
+    public String showDisplay(@RequestParam(defaultValue = "0") int page,@RequestParam(defaultValue = "") String searchName,Model model) {
         Pageable pageable = PageRequest.of(page,2, Sort.by("date").ascending());
         Page<Blog> blogPage = blogService.findAll(pageable,searchName);
         model.addAttribute("searchName",searchName);

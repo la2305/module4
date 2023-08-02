@@ -25,12 +25,14 @@ public class RestBlogController {
     private IBlogService blogService;
 
     @GetMapping("/blogs")
-    public ResponseEntity<List<Blog>> getList() {
-        List<Blog> blogList = blogService.findALl();
-        if (blogList.isEmpty()) {
+    public ResponseEntity<Page<Blog>> getListBlog(@RequestParam(defaultValue = "0") Integer page,
+                                                  @RequestParam(defaultValue = "") String search) {
+        Pageable pageable = PageRequest.of(page,2,Sort.by("name").ascending());
+        Page<Blog> blogPage =blogService.findAll(pageable,search);
+        if (blogPage.getTotalElements()==0) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(blogList, HttpStatus.OK);
+        return new ResponseEntity<>(blogPage, HttpStatus.OK);
     }
     @GetMapping("/detail/{id}")
     public ResponseEntity<Blog> detail(@PathVariable int id){
@@ -55,7 +57,7 @@ public class RestBlogController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
     @DeleteMapping("/delete1/{id}")
-    public ResponseEntity<Blog> delete1(@PathVariable int id){
+    public ResponseEntity<Blog> deletePathVariable(@PathVariable int id){
         Blog blog = blogService.findById(id);
         if (blog==null){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
