@@ -2,44 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9abe59-b311-4f85-b4ff-3579c9b21550" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/repository/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/repository/IGeneralRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/java/com/codegym/service/IGeneralService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/webapp/WEB-INF/views/customer/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/webapp/WEB-INF/views/customer/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practice/customer-management/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/configuration/AppConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/configuration/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/repository/IProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/repository/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/service/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/java/com/codegym/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/webapp/WEB-INF/views/delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/webapp/WEB-INF/views/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss6 - bài mẫu làm theo thèn pháp/product-controller-apllication/src/main/webapp/WEB-INF/views/home.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/entity/AppRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/entity/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/repository/AppUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/403Page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/adminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/logoutSuccessfulPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/userInfoPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../s12/excercise/security/src/main/resources/templates/welcomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case/Simple-Man-Store" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case/Simple-Man-Store" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/codegym/_C0323G1_LeQuangPhuoc_module4/ss6/excercise/create-blog-application",
+    "last_opened_file_path": "E:/codegym/_C0323G1_LeQuangPhuoc_module4/ss6/practice/create-blog-application",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690256287931</updated>
       <workItem from="1690256288536" duration="173000" />
+      <workItem from="1691052057392" duration="11000" />
     </task>
     <servers />
   </component>
